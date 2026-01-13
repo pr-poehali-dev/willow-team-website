@@ -73,22 +73,6 @@ const Footer = () => {
               >
                 <Icon name="Send" size={18} />
               </a>
-              <a
-                href="https://youtube.com/@willowteam"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-muted hover:bg-primary transition-colors flex items-center justify-center"
-              >
-                <Icon name="Youtube" size={18} />
-              </a>
-              <a
-                href="https://discord.gg/willowteam"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-muted hover:bg-primary transition-colors flex items-center justify-center"
-              >
-                <Icon name="MessageCircle" size={18} />
-              </a>
             </div>
           </div>
         </div>
