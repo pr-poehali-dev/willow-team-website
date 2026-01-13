@@ -73,7 +73,7 @@ const Home = () => {
               <Icon name="Award" size={48} className="text-primary mb-4" />
               <h3 className="font-heading text-2xl font-bold mb-4">Достижения</h3>
               <p className="text-muted-foreground">
-                Более 50 турнирных побед, чемпионы региональных лиг и постоянные участники международных турниров.
+                Молодая команда, стремящаяся покорить киберспортивную арену и доказать свою ценность на турнирах.
               </p>
             </Card>
 
@@ -91,27 +91,27 @@ const Home = () => {
               <div>
                 <h3 className="font-heading text-4xl font-bold mb-6">История команды</h3>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Willow Team была основана в 2020 году группой энтузиастов, объединенных общей страстью к соревновательному гейминга. За короткий срок команда прошла путь от региональных турниров до международной арены.
+                  Willow Team была основана в 2025 году группой энтузиастов, объединенных общей страстью к соревновательному гейминга. Мы только начинаем свой путь, но уже полны решимости покорять вершины.
                 </p>
                 <p className="text-lg text-muted-foreground">
-                  Сегодня Willow Team — это не просто команда, это семья профессионалов, работающих на результат. Мы развиваем молодые таланты через академию Willow Academy и продолжаем устанавливать новые стандарты в индустрии.
+                  Сегодня Willow Team — это амбициозная команда из 10 игроков, готовых доказать, что новички могут составить конкуренцию опытным командам. Мы развиваем молодые таланты через академию Willow Academy и готовимся к первым серьезным турнирам.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-black/50 p-6 rounded-lg border border-primary/30 text-center">
-                  <div className="font-heading text-5xl font-bold text-primary mb-2">50+</div>
+                  <div className="font-heading text-5xl font-bold text-primary mb-2">5+</div>
                   <div className="text-muted-foreground">Турниров</div>
                 </div>
                 <div className="bg-black/50 p-6 rounded-lg border border-primary/30 text-center">
-                  <div className="font-heading text-5xl font-bold text-primary mb-2">15</div>
+                  <div className="font-heading text-5xl font-bold text-primary mb-2">10</div>
                   <div className="text-muted-foreground">Игроков</div>
                 </div>
                 <div className="bg-black/50 p-6 rounded-lg border border-primary/30 text-center">
-                  <div className="font-heading text-5xl font-bold text-primary mb-2">4</div>
-                  <div className="text-muted-foreground">Года опыта</div>
+                  <div className="font-heading text-5xl font-bold text-primary mb-2">1</div>
+                  <div className="text-muted-foreground">Год опыта</div>
                 </div>
                 <div className="bg-black/50 p-6 rounded-lg border border-primary/30 text-center">
-                  <div className="font-heading text-5xl font-bold text-primary mb-2">TOP 5</div>
+                  <div className="font-heading text-5xl font-bold text-primary mb-2">NEW</div>
                   <div className="text-muted-foreground">В регионе</div>
                 </div>
               </div>
@@ -120,20 +120,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-20 bg-black">
-        <div className="container mx-auto px-4">
-          <h2 className="font-heading text-5xl font-bold text-center mb-12 text-white">
-            Наши спонсоры
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {['TechGear Pro', 'GameStation', 'EnergyDrink+', 'StreamNet'].map((sponsor) => (
-              <Card key={sponsor} className="bg-card border-border p-8 flex items-center justify-center hover:border-primary transition-all duration-300 hover:scale-105">
-                <span className="font-heading text-xl font-bold text-muted-foreground">{sponsor}</span>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 };
