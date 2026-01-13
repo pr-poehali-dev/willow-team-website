@@ -171,9 +171,9 @@ const Matches = () => {
                       <div className="flex items-center gap-4 mb-2">
                         <div className="flex items-center gap-2">
                           <img 
-                            src="https://cdn.poehali.dev/files/Без названия13_20260112181455.png" 
+                            src="https://cdn.poehali.dev/files/Без названия10_20260113212648.png" 
                             alt="Willow Team"
-                            className="w-10 h-10 rounded-full object-contain bg-white/5 p-1"
+                            className="w-10 h-10 rounded-full object-contain"
                           />
                           <span className="font-heading font-bold text-white">
                             Willow Team
@@ -184,15 +184,14 @@ const Matches = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <img 
-                            src="https://cdn.poehali.dev/files/Без названия13_20260112181455.png" 
+                            src="https://cdn.poehali.dev/files/Без названия10_20260113212648.png" 
                             alt="Willow Academy"
-                            className="w-10 h-10 rounded-full object-contain bg-white/5 p-1"
+                            className="w-10 h-10 rounded-full object-contain"
                           />
                           <span className="font-heading font-bold text-white">
                             {match.opponent}
                           </span>
                         </div>
-                      </div>
                       </div>
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
                         <Icon name="Calendar" size={14} />
