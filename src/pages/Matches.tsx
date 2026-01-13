@@ -55,8 +55,8 @@ const recentMatches: Array<{
     opponent: "Willow Academy",
     opponentLogo: "🌿",
     date: "13 января 2026",
-    score: "2:0",
-    result: "win",
+    score: "0:2",
+    result: "loss",
   },
 ];
 
