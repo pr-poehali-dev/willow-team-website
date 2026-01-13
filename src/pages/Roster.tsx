@@ -74,13 +74,6 @@ const academy = [
     achievements: "Лидер академии",
     stats: { winrate: "70%", kda: "1.08", games: "34" },
     rating: 1850,
-    matches: [
-      { date: "10.01.2026", opponent: "Team Alpha", result: "Победа", score: "16-12", kda: "1.2" },
-      { date: "08.01.2026", opponent: "Beta Squad", result: "Поражение", score: "13-16", kda: "0.9" },
-      { date: "05.01.2026", opponent: "Gamma Force", result: "Победа", score: "16-9", kda: "1.4" },
-      { date: "03.01.2026", opponent: "Delta Team", result: "Победа", score: "16-14", kda: "1.1" },
-      { date: "01.01.2026", opponent: "Epsilon Pro", result: "Поражение", score: "10-16", kda: "0.8" },
-    ],
   },
   {
     id: 7,
@@ -92,13 +85,6 @@ const academy = [
     achievements: "Молодой талант",
     stats: { winrate: "56%", kda: "1.00", games: "66" },
     rating: 1620,
-    matches: [
-      { date: "10.01.2026", opponent: "Team Alpha", result: "Победа", score: "16-12", kda: "0.95" },
-      { date: "08.01.2026", opponent: "Beta Squad", result: "Поражение", score: "13-16", kda: "1.1" },
-      { date: "05.01.2026", opponent: "Gamma Force", result: "Победа", score: "16-9", kda: "0.9" },
-      { date: "03.01.2026", opponent: "Delta Team", result: "Победа", score: "16-14", kda: "1.05" },
-      { date: "01.01.2026", opponent: "Epsilon Pro", result: "Поражение", score: "10-16", kda: "0.85" },
-    ],
   },
   {
     id: 8,
@@ -110,13 +96,6 @@ const academy = [
     achievements: "Перспективный игрок",
     stats: { winrate: "78%", kda: "1.03", games: "66" },
     rating: 1890,
-    matches: [
-      { date: "10.01.2026", opponent: "Team Alpha", result: "Победа", score: "16-12", kda: "1.15" },
-      { date: "08.01.2026", opponent: "Beta Squad", result: "Поражение", score: "13-16", kda: "0.95" },
-      { date: "05.01.2026", opponent: "Gamma Force", result: "Победа", score: "16-9", kda: "1.3" },
-      { date: "03.01.2026", opponent: "Delta Team", result: "Победа", score: "16-14", kda: "1.0" },
-      { date: "01.01.2026", opponent: "Epsilon Pro", result: "Поражение", score: "10-16", kda: "0.85" },
-    ],
   },
   {
     id: 9,
@@ -128,13 +107,6 @@ const academy = [
     achievements: "Снайпер академии",
     stats: { winrate: "69%", kda: "1.01", games: "33" },
     rating: 1780,
-    matches: [
-      { date: "10.01.2026", opponent: "Team Alpha", result: "Победа", score: "16-12", kda: "1.1" },
-      { date: "08.01.2026", opponent: "Beta Squad", result: "Поражение", score: "13-16", kda: "0.9" },
-      { date: "05.01.2026", opponent: "Gamma Force", result: "Победа", score: "16-9", kda: "1.2" },
-      { date: "03.01.2026", opponent: "Delta Team", result: "Победа", score: "16-14", kda: "0.95" },
-      { date: "01.01.2026", opponent: "Epsilon Pro", result: "Поражение", score: "10-16", kda: "0.8" },
-    ],
   },
   {
     id: 10,
@@ -146,13 +118,6 @@ const academy = [
     achievements: "Штурмовик команды",
     stats: { winrate: "67%", kda: "1.04", games: "35" },
     rating: 1720,
-    matches: [
-      { date: "10.01.2026", opponent: "Team Alpha", result: "Победа", score: "16-12", kda: "1.05" },
-      { date: "08.01.2026", opponent: "Beta Squad", result: "Поражение", score: "13-16", kda: "1.0" },
-      { date: "05.01.2026", opponent: "Gamma Force", result: "Победа", score: "16-9", kda: "1.15" },
-      { date: "03.01.2026", opponent: "Delta Team", result: "Победа", score: "16-14", kda: "1.1" },
-      { date: "01.01.2026", opponent: "Epsilon Pro", result: "Поражение", score: "10-16", kda: "0.85" },
-    ],
   },
 ];
 
@@ -347,44 +312,6 @@ const Roster = () => {
                         <div className="text-xs text-muted-foreground">Игр</div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div>
-                  <div className="flex items-center gap-2 mb-4">
-                    <Icon name="History" size={20} className="text-primary" />
-                    <h3 className="font-heading text-2xl font-bold">История матчей</h3>
-                  </div>
-                  
-                  <div className="space-y-3">
-                    {selectedPlayer.matches?.map((match, idx) => (
-                      <Card key={idx} className="bg-black/30 border-border p-4 hover:border-primary/50 transition-colors">
-                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-                          <div className="flex items-center gap-4">
-                            <div className="text-center min-w-[80px]">
-                              <div className="text-xs text-muted-foreground mb-1">{match.date}</div>
-                              <Badge 
-                                className={
-                                  match.result === "Победа" 
-                                    ? "bg-green-950 text-green-400 border-green-800" 
-                                    : "bg-red-950 text-red-400 border-red-800"
-                                }
-                              >
-                                {match.result}
-                              </Badge>
-                            </div>
-                            <div>
-                              <div className="font-heading font-bold text-white">{match.opponent}</div>
-                              <div className="text-sm text-muted-foreground">Счет: {match.score}</div>
-                            </div>
-                          </div>
-                          <div className="bg-primary/10 px-4 py-2 rounded-lg border border-primary/30">
-                            <div className="text-xs text-muted-foreground">KDA</div>
-                            <div className="font-heading text-lg font-bold text-primary">{match.kda}</div>
-                          </div>
-                        </div>
-                      </Card>
-                    ))}
                   </div>
                 </div>
               </div>
