@@ -40,7 +40,7 @@ const Home = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-full"></div>
                 <img 
-                  src="https://cdn.poehali.dev/projects/87ce023b-1800-4819-99d3-b02dcc812991/files/44016d28-4592-4da8-b832-eaf0892f805d.jpg" 
+                  src="https://cdn.poehali.dev/files/Без названия10_20260113212648.png" 
                   alt="Willow Team Logo" 
                   className="relative w-96 h-96 object-contain drop-shadow-2xl"
                 />

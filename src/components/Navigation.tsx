@@ -22,9 +22,11 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <span className="text-2xl">🌳</span>
-            </div>
+            <img 
+              src="https://cdn.poehali.dev/files/Без названия10_20260113212648.png" 
+              alt="Willow Team" 
+              className="h-12 w-auto object-contain group-hover:scale-110 transition-transform duration-300"
+            />
             <div>
               <div className="font-heading text-2xl font-black text-white leading-none">
                 WILLOW

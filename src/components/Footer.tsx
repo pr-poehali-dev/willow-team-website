@@ -7,9 +7,11 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                <span className="text-2xl">🌳</span>
-              </div>
+              <img 
+                src="https://cdn.poehali.dev/files/Без названия10_20260113212648.png" 
+                alt="Willow Team" 
+                className="h-12 w-auto object-contain"
+              />
               <div>
                 <div className="font-heading text-xl font-black text-white leading-none">
                   WILLOW
